@@ -1,0 +1,10 @@
+PODS:
+  - MWIDCardValidate (1.0.0)
+
+DEPENDENCIES:
+  - MWIDCardValidate (~> 1.0.0)
+
+SPEC CHECKSUMS:
+  MWIDCardValidate: d00c39d6dffd7bfc3d3583ebe7f752237f186bab
+
+COCOAPODS: 0.38.2
