@@ -14,6 +14,9 @@
 		0DDC56CB1B9B2D210014F7EA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0DDC56CA1B9B2D210014F7EA /* Images.xcassets */; };
 		0DDC56CE1B9B2D210014F7EA /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0DDC56CC1B9B2D210014F7EA /* LaunchScreen.xib */; };
 		0DDC56DA1B9B2D210014F7EA /* MWIDCardInfoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DDC56D91B9B2D210014F7EA /* MWIDCardInfoTests.m */; };
+		0DDC56E91B9BF7AA0014F7EA /* ZoneCode.db in Resources */ = {isa = PBXBuildFile; fileRef = 0DDC56E61B9BF7AA0014F7EA /* ZoneCode.db */; };
+		0DDC56EA1B9BF7AA0014F7EA /* ZoneCode.json in Resources */ = {isa = PBXBuildFile; fileRef = 0DDC56E71B9BF7AA0014F7EA /* ZoneCode.json */; };
+		0DDC56ED1B9BF8500014F7EA /* MWIDCardInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DDC56EC1B9BF8500014F7EA /* MWIDCardInfo.m */; };
 		5AD0709F7FFB7A7108CE166F /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 946026C32865064EC8954866 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -41,6 +44,10 @@
 		0DDC56D31B9B2D210014F7EA /* MWIDCardInfoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MWIDCardInfoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0DDC56D81B9B2D210014F7EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0DDC56D91B9B2D210014F7EA /* MWIDCardInfoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MWIDCardInfoTests.m; sourceTree = "<group>"; };
+		0DDC56E61B9BF7AA0014F7EA /* ZoneCode.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = ZoneCode.db; sourceTree = "<group>"; };
+		0DDC56E71B9BF7AA0014F7EA /* ZoneCode.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ZoneCode.json; sourceTree = "<group>"; };
+		0DDC56EB1B9BF8500014F7EA /* MWIDCardInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWIDCardInfo.h; sourceTree = "<group>"; };
+		0DDC56EC1B9BF8500014F7EA /* MWIDCardInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MWIDCardInfo.m; sourceTree = "<group>"; };
 		58F6B4067B06F516F41FC236 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		946026C32865064EC8954866 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		E82D519BD43314CD2D70DA8E /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
@@ -68,6 +75,7 @@
 		0DDC56B11B9B2D210014F7EA = {
 			isa = PBXGroup;
 			children = (
+				0DDC56E31B9BF7AA0014F7EA /* IDCardInfo */,
 				0DDC56BC1B9B2D210014F7EA /* MWIDCardInfo */,
 				0DDC56D61B9B2D210014F7EA /* MWIDCardInfoTests */,
 				0DDC56BB1B9B2D210014F7EA /* Products */,
@@ -124,6 +132,17 @@
 				0DDC56D81B9B2D210014F7EA /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0DDC56E31B9BF7AA0014F7EA /* IDCardInfo */ = {
+			isa = PBXGroup;
+			children = (
+				0DDC56EB1B9BF8500014F7EA /* MWIDCardInfo.h */,
+				0DDC56EC1B9BF8500014F7EA /* MWIDCardInfo.m */,
+				0DDC56E61B9BF7AA0014F7EA /* ZoneCode.db */,
+				0DDC56E71B9BF7AA0014F7EA /* ZoneCode.json */,
+			);
+			path = IDCardInfo;
 			sourceTree = "<group>";
 		};
 		D6E391EEF21664A0C795D144 /* Pods */ = {
@@ -227,6 +246,8 @@
 			files = (
 				0DDC56C91B9B2D210014F7EA /* Main.storyboard in Resources */,
 				0DDC56CE1B9B2D210014F7EA /* LaunchScreen.xib in Resources */,
+				0DDC56EA1B9BF7AA0014F7EA /* ZoneCode.json in Resources */,
+				0DDC56E91B9BF7AA0014F7EA /* ZoneCode.db in Resources */,
 				0DDC56CB1B9B2D210014F7EA /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -280,6 +301,7 @@
 			files = (
 				0DDC56C61B9B2D210014F7EA /* ViewController.m in Sources */,
 				0DDC56C31B9B2D210014F7EA /* AppDelegate.m in Sources */,
+				0DDC56ED1B9BF8500014F7EA /* MWIDCardInfo.m in Sources */,
 				0DDC56C01B9B2D210014F7EA /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
