@@ -78,7 +78,7 @@
     NSDate *date = _birthday;
     
     NSCalendar *cal = [NSCalendar currentCalendar];
-    
+    cal.timeZone = [NSTimeZone systemTimeZone];
     unsigned int unitFlags = NSCalendarUnitYear | NSCalendarUnitMonth | NSCalendarUnitDay;
     
     NSDateComponents *d = [cal components:unitFlags fromDate:date toDate:[NSDate date] options:0];

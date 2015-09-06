@@ -17,7 +17,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    NSLog(@"%@",[MWIDCardInfo userInfoWithidentityCard:@"120113198803020816"].birthday);
 }
 
 - (void)didReceiveMemoryWarning {
