@@ -8,6 +8,8 @@
 
 #import "MWIDCardInfo.h"
 #import <sqlite3.h>
+#import <MWIDCardValidate.h>
+
 @interface MWIDCardInfo ()
 @property (nonatomic,strong) NSDictionary *zoneCode;
 @end

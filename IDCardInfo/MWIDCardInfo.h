@@ -7,7 +7,6 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <MWIDCardValidate.h>
 @class MWUser;
 @interface MWIDCardInfo : NSObject
 + (MWUser *)userInfoWithidentityCard:(NSString *)identityCard;
