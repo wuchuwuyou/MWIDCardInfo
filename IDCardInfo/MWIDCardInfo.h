@@ -23,8 +23,8 @@ typedef NS_ENUM(NSUInteger, MWUserType) {
 @interface MWUser : NSObject
 
 @property (nonatomic,assign) MWUserType sex;
-@property (nonatomic,assign) NSNumber   *age;
+@property (nonatomic,strong) NSNumber   *age;
 @property (nonatomic,strong) NSDate     *birthday;
-@property (nonatomic,strong) NSString   *region;
+@property (nonatomic,copy) NSString   *region;
 
 @end

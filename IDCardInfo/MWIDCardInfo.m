@@ -7,7 +7,7 @@
 //
 
 #import "MWIDCardInfo.h"
-
+#import <sqlite3.h>
 @interface MWIDCardInfo ()
 @property (nonatomic,strong) NSDictionary *zoneCode;
 @end
@@ -48,9 +48,20 @@
     date = [NSDate dateWithTimeInterval:3600 sinceDate:date];
     [dateFormatter setTimeZone:localzone];
     user.birthday = date;
+//    double date_s = CFAbsoluteTimeGetCurrent();
+
+    NSString *reg = [self zoneStringWithZoneCode:zone];
     
-    NSString * reg = [self.zoneCode objectForKey:zone];
+//    double date_current = CFAbsoluteTimeGetCurrent() - date_s;
+//    NSLog(@"db file: %f μs",date_current * 11000 * 1000);
     
+//    double date_s_1 = CFAbsoluteTimeGetCurrent();
+//    
+//    NSString * reg = [self.zoneCode objectForKey:zone];
+//    
+//    double date_current_1 = CFAbsoluteTimeGetCurrent() - date_s_1;
+//    NSLog(@"json file: %f μs",date_current_1 * 11000 * 1000);
+
     user.region = reg;
     
     return user;
@@ -59,7 +70,7 @@
     return [[self alloc] userWithIDCard:identityCard];
 }
 
-
+/// from ZoneCode.json
 - (NSDictionary *)zoneCode{
     if (!_zoneCode) {
         NSString *filePath = [[NSBundle mainBundle] pathForResource:@"ZoneCode" ofType:@"json"];
@@ -68,7 +79,58 @@
     }
     return _zoneCode;
 }
-
+/// from ZoneCode.db
+- (NSString *)zoneStringWithZoneCode:(NSString *)code {
+    NSString *filePath = [[NSBundle mainBundle] pathForResource:@"ZoneCode" ofType:@"db"];
+    sqlite3 * db;
+    int open = sqlite3_open([filePath UTF8String], &db);
+    if (open != SQLITE_OK) {
+        sqlite3_close(db);
+        db = nil;
+        NSLog(@"db open error,error code: %zd",open);
+        return nil;
+    }
+    NSString *selectStr = [NSString stringWithFormat:@"select desc from apo_areacode where zone = %@",code];
+    sqlite3_stmt *stmt = nil;
+    int success = sqlite3_prepare_v2(db, [selectStr UTF8String], -1, &stmt, NULL);
+    if (success != SQLITE_OK) {
+        sqlite3_finalize(stmt);
+        stmt = nil;
+        sqlite3_close(db);
+        db = nil;
+        NSLog(@"db select error,error code: %zd",success);
+        return nil;
+    }
+    int stepStatus = sqlite3_step(stmt);
+    if (stepStatus == SQLITE_ROW) {
+        int count = sqlite3_data_count(stmt);
+        if (count == 0) {
+            NSLog(@"db select success,but no result");
+            return nil;
+        }else {
+            char *data = (char *)sqlite3_column_text(stmt, 0);
+            if (nil == data) {
+                sqlite3_finalize(stmt);
+                stmt = nil;
+                sqlite3_close(db);
+                db = nil;
+                return nil;
+            }
+            NSString *res = [NSString stringWithCString:data encoding:NSUTF8StringEncoding];
+            sqlite3_finalize(stmt);
+            stmt = nil;
+            sqlite3_close(db);
+            db = nil;
+            return res;
+        }
+    }else {
+        sqlite3_close(db);
+        db = nil;
+        stmt = nil;
+        NSLog(@"db select error,error code: %zd",stepStatus);
+        return nil;
+    }
+}
 @end
 
 

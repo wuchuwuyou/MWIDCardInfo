@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D55F73C1E2747FF005944A5 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D55F73B1E2747FF005944A5 /* libsqlite3.0.tbd */; };
 		0DDC56C01B9B2D210014F7EA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DDC56BF1B9B2D210014F7EA /* main.m */; };
 		0DDC56C31B9B2D210014F7EA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DDC56C21B9B2D210014F7EA /* AppDelegate.m */; };
 		0DDC56C61B9B2D210014F7EA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DDC56C51B9B2D210014F7EA /* ViewController.m */; };
@@ -31,6 +32,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0D55F73B1E2747FF005944A5 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
 		0DDC56BA1B9B2D210014F7EA /* MWIDCardInfo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MWIDCardInfo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0DDC56BE1B9B2D210014F7EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0DDC56BF1B9B2D210014F7EA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -58,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D55F73C1E2747FF005944A5 /* libsqlite3.0.tbd in Frameworks */,
 				5AD0709F7FFB7A7108CE166F /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -157,6 +160,7 @@
 		FF4CA17196F37326D9E6D779 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0D55F73B1E2747FF005944A5 /* libsqlite3.0.tbd */,
 				946026C32865064EC8954866 /* libPods.a */,
 			);
 			name = Frameworks;

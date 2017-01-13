@@ -17,6 +17,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+   MWUser *user = [MWIDCardInfo userInfoWithidentityCard:@"120113198803020816"];
+    NSLog(@"%@",user);
 }
 
 - (void)didReceiveMemoryWarning {
