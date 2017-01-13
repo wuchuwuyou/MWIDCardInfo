@@ -9,7 +9,7 @@
 	pod 'MWIDCardInfo', '~> 1.0.0'
 	
 
-###Data
+###MWUser
 	typedef NS_ENUM(NSUInteger, MWUserType) {
     	MWUserMale = 1,
     	MWUserFemale
