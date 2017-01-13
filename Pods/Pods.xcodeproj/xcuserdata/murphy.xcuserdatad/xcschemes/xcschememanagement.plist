@@ -9,7 +9,7 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods.xcscheme</key>
+		<key>Pods-MWIDCardInfo.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -17,12 +17,12 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>0C9EFC5CEDE4B30288AD7984FFEF303C</key>
+		<key>7906504B25C560F63DB427E63A3104F5</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>51479BC1A29A2A6FE180C9BD288A58ED</key>
+		<key>7C8DB522B7727566E4DD8F3E870AED61</key>
 		<dict>
 			<key>primary</key>
 			<true/>

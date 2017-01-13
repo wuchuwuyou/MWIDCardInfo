@@ -6,7 +6,7 @@
 ###CocoaPods
 	#Your Podfile
 	platform :ios, '7.0'
-	pod 'MWIDCardInfo', '~> 1.0.0'
+	pod 'MWIDCardInfo', '~> 1.0.2'
 	
 
 ###MWUser

@@ -18,7 +18,7 @@
 		0DDC56E91B9BF7AA0014F7EA /* ZoneCode.db in Resources */ = {isa = PBXBuildFile; fileRef = 0DDC56E61B9BF7AA0014F7EA /* ZoneCode.db */; };
 		0DDC56EA1B9BF7AA0014F7EA /* ZoneCode.json in Resources */ = {isa = PBXBuildFile; fileRef = 0DDC56E71B9BF7AA0014F7EA /* ZoneCode.json */; };
 		0DDC56ED1B9BF8500014F7EA /* MWIDCardInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DDC56EC1B9BF8500014F7EA /* MWIDCardInfo.m */; };
-		5AD0709F7FFB7A7108CE166F /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 946026C32865064EC8954866 /* libPods.a */; };
+		4AA0000CEBB4BE0054D0D348 /* libPods-MWIDCardInfo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E197A4AA348E235DB57C065 /* libPods-MWIDCardInfo.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +32,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0CEB7527F50B5AC62633F827 /* Pods-MWIDCardInfo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MWIDCardInfo.release.xcconfig"; path = "Pods/Target Support Files/Pods-MWIDCardInfo/Pods-MWIDCardInfo.release.xcconfig"; sourceTree = "<group>"; };
 		0D55F73B1E2747FF005944A5 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
 		0DDC56BA1B9B2D210014F7EA /* MWIDCardInfo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MWIDCardInfo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0DDC56BE1B9B2D210014F7EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -50,9 +51,8 @@
 		0DDC56E71B9BF7AA0014F7EA /* ZoneCode.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ZoneCode.json; sourceTree = "<group>"; };
 		0DDC56EB1B9BF8500014F7EA /* MWIDCardInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWIDCardInfo.h; sourceTree = "<group>"; };
 		0DDC56EC1B9BF8500014F7EA /* MWIDCardInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MWIDCardInfo.m; sourceTree = "<group>"; };
-		58F6B4067B06F516F41FC236 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
-		946026C32865064EC8954866 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		E82D519BD43314CD2D70DA8E /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		464D4FDE9AD3F18C410199B0 /* Pods-MWIDCardInfo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MWIDCardInfo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MWIDCardInfo/Pods-MWIDCardInfo.debug.xcconfig"; sourceTree = "<group>"; };
+		9E197A4AA348E235DB57C065 /* libPods-MWIDCardInfo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MWIDCardInfo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,7 +61,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0D55F73C1E2747FF005944A5 /* libsqlite3.0.tbd in Frameworks */,
-				5AD0709F7FFB7A7108CE166F /* libPods.a in Frameworks */,
+				4AA0000CEBB4BE0054D0D348 /* libPods-MWIDCardInfo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,8 +82,8 @@
 				0DDC56BC1B9B2D210014F7EA /* MWIDCardInfo */,
 				0DDC56D61B9B2D210014F7EA /* MWIDCardInfoTests */,
 				0DDC56BB1B9B2D210014F7EA /* Products */,
-				D6E391EEF21664A0C795D144 /* Pods */,
 				FF4CA17196F37326D9E6D779 /* Frameworks */,
+				67A9E1E7E80F536C133BEF3E /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -148,11 +148,11 @@
 			path = IDCardInfo;
 			sourceTree = "<group>";
 		};
-		D6E391EEF21664A0C795D144 /* Pods */ = {
+		67A9E1E7E80F536C133BEF3E /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				E82D519BD43314CD2D70DA8E /* Pods.debug.xcconfig */,
-				58F6B4067B06F516F41FC236 /* Pods.release.xcconfig */,
+				464D4FDE9AD3F18C410199B0 /* Pods-MWIDCardInfo.debug.xcconfig */,
+				0CEB7527F50B5AC62633F827 /* Pods-MWIDCardInfo.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -161,7 +161,7 @@
 			isa = PBXGroup;
 			children = (
 				0D55F73B1E2747FF005944A5 /* libsqlite3.0.tbd */,
-				946026C32865064EC8954866 /* libPods.a */,
+				9E197A4AA348E235DB57C065 /* libPods-MWIDCardInfo.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -173,11 +173,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0DDC56DD1B9B2D210014F7EA /* Build configuration list for PBXNativeTarget "MWIDCardInfo" */;
 			buildPhases = (
-				A60C3D76EDBBF60D90C9639C /* Check Pods Manifest.lock */,
+				1D716B6E481221C57A9BF405 /* [CP] Check Pods Manifest.lock */,
 				0DDC56B61B9B2D210014F7EA /* Sources */,
 				0DDC56B71B9B2D210014F7EA /* Frameworks */,
 				0DDC56B81B9B2D210014F7EA /* Resources */,
-				627A32E7CF7EE8607658C034 /* Copy Pods Resources */,
+				D89C40FFAD74BA4AF21A90CF /* [CP] Embed Pods Frameworks */,
+				499E389BCA3BDA86CF2A66EF /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -266,34 +267,49 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		627A32E7CF7EE8607658C034 /* Copy Pods Resources */ = {
+		1D716B6E481221C57A9BF405 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		A60C3D76EDBBF60D90C9639C /* Check Pods Manifest.lock */ = {
+		499E389BCA3BDA86CF2A66EF /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MWIDCardInfo/Pods-MWIDCardInfo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D89C40FFAD74BA4AF21A90CF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MWIDCardInfo/Pods-MWIDCardInfo-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -432,7 +448,7 @@
 		};
 		0DDC56DE1B9B2D210014F7EA /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E82D519BD43314CD2D70DA8E /* Pods.debug.xcconfig */;
+			baseConfigurationReference = 464D4FDE9AD3F18C410199B0 /* Pods-MWIDCardInfo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MWIDCardInfo/Info.plist;
@@ -443,7 +459,7 @@
 		};
 		0DDC56DF1B9B2D210014F7EA /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 58F6B4067B06F516F41FC236 /* Pods.release.xcconfig */;
+			baseConfigurationReference = 0CEB7527F50B5AC62633F827 /* Pods-MWIDCardInfo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MWIDCardInfo/Info.plist;
